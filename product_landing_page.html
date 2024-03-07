@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <aside class="image-wrapper">
+      <img id="header-img" src="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png" alt="freecodecamp logo" loading="lazy" />
+      </aside>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#header">Top</a>
+        <a class="nav-link" href="#video">Video</a>
+        <a class="nav-link" href="#form">Sign Up</a>
+      </nav>
+    </header>
+    <main>
+      <section class="video">
+        <iframe id="video" 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/nLRL_NcnK-4" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </section>
+      <section class="form">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" placeholder="e.g. John" required />
+          <br>
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder="e.g. Doe" required />
+          <br>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="e.g. jdoe@fcc.org" required />
+          <br>
+          <label for="over13">I am over 13 years of age</label>
+          <input type="checkbox" id="over13" name="over13" required />
+          <br>
+          <input type="submit" id="submit" name="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
